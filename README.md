@@ -29,9 +29,9 @@ NEOPIXEL_DISPLAY LED=Led_Name TEMPLATE=template_name
 
 Available templates:
 
-**`led_extruder_temp`** current extruder temperature relative to target temperature (if is set) or from maxim extruder temperature
+**`led_extruder_temp`** current extruder temperature relative to target temperature (if is set) or to maxim extruder temperature
 
-**`led_bed_temp`** current bed temperature relative to target temperature (if is set) or from maxim bed temperature
+**`led_bed_temp`** current bed temperature relative to target temperature (if is set) or to maxim bed temperature
 
 **`led_print_progress`** progress of current print
 
