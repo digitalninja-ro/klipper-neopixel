@@ -2,9 +2,9 @@
 
 ## Info
 
-This is a collection of NeoPixel led templates. It uses the array of led as a progress bar for different printer actions. The refresh rate is faster than delayed_gcode.
+This is a collection of NeoPixel led templates for [Klipper](https://github.com/Klipper3d/klipper) firmware. It uses the array of leds as a progress bar for different printer actions. The refresh rate is faster than delayed_gcode.
 
-The template of led is changed by a macro. This is very handy in case you want to change the template during start macro or during a print. For example in the start macro you could set the template for temperature during preheat and then change to the template for print progress or printer speed for the same NeoPixel.
+The template of NeoPixel is changed by a macro. This is very handy in case you want to change the template during start macro or during a print. For example in the start macro you could set the template for temperature during preheat and then change to the template for print progress or printer speed for the same NeoPixel.
 
 ## Instalation
 
