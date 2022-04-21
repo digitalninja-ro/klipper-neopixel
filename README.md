@@ -24,12 +24,15 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 NEOPIXEL_DISPLAY LED=Led_Name TEMPLATE=template_name
 ```
 
+
+
+
 Available templates:
 
-**led_extruder_temp**
+**`led_extruder_temp`** current extruder temperature relative to target temperature (if is set) or to maxim extruder temperature
 
-**led_bed_temp**
+**`led_bed_temp`** current bed temperature relative to target temperature (if is set) or to maxim bed temperature
 
-**led_print_progress**
+**`led_print_progress`** progress of current print
 
-**led_printer_speed**
+**`led_printer_speed`** current speed relative to maximum printer speed
