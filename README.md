@@ -9,7 +9,12 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 ## Installation
 
 1. Assuming you have a working NeoPixel led
-
+   
+   ```
+   [neopixel my_pixel]
+   pin: PB9
+   chain_count: 32
+   ```
 2. Download / clone ***led_progress.cfg*** to your klipper_config folder
 
 3. Include this file in your printer.cfg
