@@ -26,8 +26,10 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 ## Use
 
 ```
-NEOPIXEL_DISPLAY LED=Led_Name TYPE=template_type MODE=template_mode
+NEOPIXEL_DISPLAY LED="led_name" TYPE=template_type MODE=template_mode
 ```
+### LED
+Your led name from neopixel cfg section
 
 ### TYPE
 
@@ -44,6 +46,7 @@ NEOPIXEL_DISPLAY LED=Led_Name TYPE=template_type MODE=template_mode
 `glow` all leds will fade from one color (or non) to an other color
 
 `progress` the leds will light up one by one
+
 
 You can combine any **TYPE** with any **MODE**.
 
