@@ -6,33 +6,58 @@ This is a collection of NeoPixel led templates for [Klipper](https://github.com/
 
 The template of NeoPixel is changed by a macro. This is very handy in case you want to change the template during start macro or during a print. For example in the start macro you could set the template for temperature during preheat and then change to the template for print progress or printer speed for the same NeoPixel.
 
-## Instalation
+## Installation
 
 1. Assuming you have a working NeoPixel led
 
 2. Download / clone ***led_progress.cfg*** to your klipper_config folder
 
 3. Include this file in your printer.cfg
-   
-   ```
-   [include led_progress.cfg]
-   ```
+
+```
+[include led_progress.cfg]
+```
 
 ## Use
 
 ```
-NEOPIXEL_DISPLAY LED=Led_Name TEMPLATE=template_name
+NEOPIXEL_DISPLAY LED=Led_Name TYPE=template_type MODE=template_mod
 ```
 
+### TYPE
 
+**`extruder_temp`**  extruder temperature relative to target temperature (if is set) or to maxim temperature
 
+**`bed_temp`**  bed temperature relative to target temperature (if is set) or to maxim temperature
 
-Available templates:
+**`print_percent`** progress of current print
 
-**`led_extruder_temp`** current extruder temperature relative to target temperature (if is set) or to maxim extruder temperature
+**`printer_speed`** current speed relative to maximum printer speed
 
-**`led_bed_temp`** current bed temperature relative to target temperature (if is set) or to maxim bed temperature
+### MODE
 
-**`led_print_progress`** progress of current print
+`glow` all leds will fade from one color (or non) to an other color
 
-**`led_printer_speed`** current speed relative to maximum printer speed
+`progress` the leds will light up one by one
+
+## 
+
+## Examples
+
+```
+NEOPIXEL_DISPLAY LED=my_led TYPE=extruder_temp MODE=glow
+```
+
+This macro command will show the extruder temperature in glow mode.
+
+```
+NEOPIXEL_DISPLAY LED=my_led TYPE=print_percent MODE=progress
+```
+
+This macro command will show print completion in progress mode. 
+
+```
+NEOPIXEL_DISPLAY LED=my_led TYPE=print_speed MODE=progress
+```
+
+This macro command will show print speed in progress mode.
