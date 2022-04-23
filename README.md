@@ -26,7 +26,7 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 ## Use
 
 ```
-NEOPIXEL_DISPLAY LED=Led_Name TYPE=template_type MODE=template_mod
+NEOPIXEL_DISPLAY LED=Led_Name TYPE=template_type MODE=template_mode
 ```
 
 ### TYPE
