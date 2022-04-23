@@ -45,7 +45,8 @@ NEOPIXEL_DISPLAY LED=Led_Name TYPE=template_type MODE=template_mod
 
 `progress` the leds will light up one by one
 
-## 
+You can combine any **TYPE** with any **MODE**.
+
 
 ## Examples
 
