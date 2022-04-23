@@ -11,7 +11,7 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 1. Assuming you have a working NeoPixel led
    
    ```
-   [neopixel my_pixel]
+   [neopixel my_led]
    pin: PB9
    chain_count: 32
    ```
