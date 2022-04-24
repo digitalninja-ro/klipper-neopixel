@@ -54,19 +54,19 @@ You can combine any **TYPE** with any **MODE**.
 ## Examples
 
 ```
-NEOPIXEL_DISPLAY LED=my_led TYPE=extruder_temp MODE=glow
+NEOPIXEL_DISPLAY LED="my_led" TYPE=extruder_temp MODE=glow
 ```
 
 This macro command will show the extruder temperature in glow mode.
 
 ```
-NEOPIXEL_DISPLAY LED=my_led TYPE=print_percent MODE=progress
+NEOPIXEL_DISPLAY LED="my_led" TYPE=print_percent MODE=progress
 ```
 
 This macro command will show print completion in progress mode. 
 
 ```
-NEOPIXEL_DISPLAY LED=my_led TYPE=print_speed MODE=progress
+NEOPIXEL_DISPLAY LED="my_led" TYPE=print_speed MODE=progress
 ```
 
 This macro command will show print speed in progress mode.
