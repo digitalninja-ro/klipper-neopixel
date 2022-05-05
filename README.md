@@ -12,9 +12,10 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
    
    ```
    [neopixel my_led]
-   pin: PB9
+   pin: PB9 ;use your own pin
    chain_count: 32
    ```
+
 2. Download / clone ***led_progress.cfg*** to your klipper_config folder
 
 3. Include this file in your printer.cfg
@@ -28,7 +29,9 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 ```
 NEOPIXEL_DISPLAY LED="led_name" TYPE=template_type MODE=template_mode
 ```
+
 ### LED
+
 Your led name from neopixel cfg section
 
 ### TYPE
@@ -47,9 +50,7 @@ Your led name from neopixel cfg section
 
 `progress` the leds will light up one by one
 
-
 You can combine any **TYPE** with any **MODE**.
-
 
 ## Examples
 
@@ -70,3 +71,13 @@ NEOPIXEL_DISPLAY LED="my_led" TYPE=print_speed MODE=progress
 ```
 
 This macro command will show print speed in progress mode.
+
+## Clear Template
+
+You can change between templates without **clear**. But as long as you have a template assigned to a LED you can't change its color because the template controls the led. You need to clear the template and then you can use SET_LED commands to manage the LED's color settings.
+
+```
+NEOPIXEL_DISPLAY LED="my_led" TYPE=clear
+```
+
+This macro command will clear any previous template assigned to the LED.
