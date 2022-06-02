@@ -80,4 +80,4 @@ You can change between templates without **clear**. But as long as you have a te
 NEOPIXEL_DISPLAY LED="my_led" TYPE=clear
 ```
 
-This macro command will clear any previous template assigned to the LED.
+This macro command will clear any previous template assigned to the LED and turn it off.
