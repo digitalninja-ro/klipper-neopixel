@@ -24,10 +24,6 @@ The template of NeoPixel is changed by a macro. This is very handy in case you w
 [include led_progress.cfg]
 ```
 
-4. If you don't have a `[display]` section in your printer.cfg add
-```
-[display_status]
-```
 
 ## Use
 
